@@ -1,0 +1,31 @@
+/* feedback_user.css */
+/* Bổ sung/ghi đè riêng cho trang feedback_user */
+
+.stars {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 6px;
+  user-select: none;
+}
+
+.star {
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  color: #4b5563; /* xám mặc định */
+  transition: color .2s ease-in-out, transform .1s ease-in-out;
+}
+
+.star.selected {
+  color: #f59e0b; /* vàng khi chọn */
+}
+
+.star:hover {
+  transform: translateY(-1px) scale(1.05);
+}
+
+.hint.center {
+  text-align: center;
+  margin-top: 6px;
+}
